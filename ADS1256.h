@@ -97,7 +97,7 @@
 
 class ADS1256 {
  public:
-    ADS1256(float clockspdMhz, float vref, bool useresetpin, uint8_t pin_drdy, uint8_t pin_sck, uint8_t pin_miso, uint8_t pin_mosi, uint8_t pin_cs);
+    ADS1256(float clockspdMhz, float vref, bool useresetpin, uint8_t pin_drdy, uint8_t pin_sck, uint8_t pin_miso, uint8_t pin_mosi, uint8_t pin_cs, uint8_t pin_rst);
   void initSpi(float clockspdMhz);
   void writeRegister(unsigned char reg, unsigned char wdata);
   unsigned char readRegister(unsigned char reg);

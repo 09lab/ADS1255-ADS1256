@@ -17,7 +17,7 @@ uint8_t PIN_MOSI=17;
 uint8_t PIN_CS=21;
 
 ADS1256::ADS1256(float clockspdMhz, float vref, bool useResetPin
-                 , uint8_t pin_drdy, uint8_t pin_sck, uint8_t pin_miso, uint8_t pin_mosi, uint8_t pin_cs) {
+                 , uint8_t pin_drdy, uint8_t pin_sck, uint8_t pin_miso, uint8_t pin_mosi, uint8_t pin_cs, uint8_t pin_rst) {
     
     // overwrite pins as needed
     PIN_DRDY = pin_drdy;
@@ -25,6 +25,7 @@ ADS1256::ADS1256(float clockspdMhz, float vref, bool useResetPin
     PIN_MISO = pin_miso;
     PIN_MOSI = pin_mosi;
     PIN_CS = pin_cs;
+    PIN_RST = pin_rst;
     
     
   // Set DRDY as input
